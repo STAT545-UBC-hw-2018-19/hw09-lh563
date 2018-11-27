@@ -1,17 +1,12 @@
-make-activity
+HW09-automation
 =============
 
-The commit history of this repository reflects what a student might do as she works through [this activity](http://stat545-ubc.github.io/automation04_make-activity.html) from [STAT 545](http://stat545-ubc.github.io). This fully developed example shows:
+The homeowrk requirement can be found [here](http://stat545.com/Classroom/assignments/hw09/hw09.html). The homework original code was from Jenny's [make-activity](https://github.com/STAT545-UBC/make-activity).
 
-  * How to run an R script non-interactively
-  * How to use `make`
-    - to record which files are inputs vs. intermediates vs. outputs
-    - to capture how scripts and commands convert inputs to outputs
-    - to re-run parts of an analysis that are out-of-date
-  * The intersection of R and `make`, i.e. how to
-    - run snippets of R code
-    - run an entire R script
-    - render an R Markdown document (or R script)
-  * The interface between RStudio and `make`
-  * How to use `make` from the shell
-  * How Git facilitates the process of building a pipeline
+|  Assignment Files  |     |
+|-----------|-------------|
+|Makefile|[Makefile](Makefile)|
+|gapminder R and tsv file saved | [gapminder.R](gapminder.R), [Canada_gap_data.txv](anada_gap_data.txv)|
+|gapminder plot Rmarkdown file & plot| [gapminder plot.Rmd](https://github.com/STAT545-UBC-students/hw09-lh563/blob/master/gapminder%20plot.Rmd),[Canada life expectancy plot](gapminder.png)|
+
+Thanks for reading!
