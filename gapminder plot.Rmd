@@ -1,0 +1,26 @@
+---
+title: "gapminder"
+author: "Lu Han"
+date: "11/22/2018"
+output: html_document
+---
+```{r}
+library(ggplot2)
+library(dplyr)
+
+Canada_gap_data <- read.delim("Canada_gap_data.tsv") %>% tbl_df()
+
+p <- Canada_gap_data %>% 
+	ggplot(aes(x=year, y=lifeExp))+
+	geom_point()+
+	ylab("lifeExpctency in Canada")
+
+ggsave(filename = "gapminder.png",plot=p)
+	
+```
+
+
+
+
+	
+ggsave("gapminder.png", p)

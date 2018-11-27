@@ -1,7 +1,7 @@
 all: report.html
 
 clean:
-	rm -f words.txt histogram.tsv histogram.png report.md report.html
+	rm -f words.txt histogram.tsv histogram.png report.md report.html Canada_gap_data.tsv gapminder.png
 
 report.html: report.rmd histogram.tsv histogram.png
 	Rscript -e 'rmarkdown::render("$<")'
@@ -18,3 +18,10 @@ words.txt: /usr/share/dict/words
 
 # words.txt:
 #	Rscript -e 'download.file("http://svnweb.freebsd.org/base/head/share/dict/web2?view=co", destfile = "words.txt", quiet = TRUE)'
+
+gapminder.png: gapminder plot.Rmd gapminder.R
+	Rscript -e 'rmarkdown::render("$<")'
+	
+Canada_gap_data.tsv: gapminder.R
+	Rscript $<
+
