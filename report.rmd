@@ -1,22 +1,15 @@
 ---
-title: "English Word lengths"
-author: "Jenny Bryan"
+title: "Canada lifeExp over years"
+author: "Lu Han"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   html_document:
     keep_md: yes
 ---
 
-```{r load-hist-dat, include = FALSE}
-hist_dat <- read.delim("histogram.tsv")
-```
 
-On most *nix systems, the file `/usr/share/dict/words` contains a bunch of words. On my machine, it contains `r sum(hist_dat$Freq)` words.
+I made a Canada gapminder dataset filtered with Canada data only and saved it in [Canada_gap_data.tsv](Canada_gap_data.tsv)
 
-I computed the length of each word, i.e. the number of characters, and tabulated how many words consist of 1 character, 2 characters, etc.
+Here is the plot based on the aformentioned data:
+![*Fig. 1* Life expectancy in Canada from 1952 to 2007 ](gapminder.png)
 
-The most frequent word length is `r with(hist_dat, Length[which.max(Freq)])`.
-
-Here is a histogram of word lengths.
-
-![*Fig. 1* A histogram of English word lengths](histogram.png)

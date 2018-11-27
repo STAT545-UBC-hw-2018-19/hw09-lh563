@@ -1,20 +1,15 @@
 ---
-title: "English Word lengths"
-author: "Jenny Bryan"
-date: "26 November, 2018"
+title: "Canada lifeExp over years"
+author: "Lu Han"
+date: "27 November, 2018"
 output:
   html_document:
     keep_md: yes
 ---
 
 
+I made a Canada gapminder dataset filtered with Canada data only and saved it in [Canada_gap_data.tsv](Canada_gap_data.tsv)
 
-On most *nix systems, the file `/usr/share/dict/words` contains a bunch of words. On my machine, it contains 235886 words.
+Here is the plot based on the aformentioned data:
+![*Fig. 1* Life expectancy in Canada from 1952 to 2007 ](gapminder.png)
 
-I computed the length of each word, i.e. the number of characters, and tabulated how many words consist of 1 character, 2 characters, etc.
-
-The most frequent word length is 9.
-
-Here is a histogram of word lengths.
-
-![*Fig. 1* A histogram of English word lengths](histogram.png)
