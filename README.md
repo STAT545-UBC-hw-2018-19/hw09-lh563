@@ -8,5 +8,6 @@ The homeowrk requirement can be found [here](http://stat545.com/Classroom/assign
 |Makefile|[Makefile](Makefile)|
 |gapminder R and tsv file saved | [gapminder.R](gapminder.R), [Canada_gap_data.txv](anada_gap_data.txv)|
 |gapminder plot Rmarkdown file & plot| [gapminder plot.Rmd](https://github.com/STAT545-UBC-students/hw09-lh563/blob/master/gapminder%20plot.Rmd),[Canada life expectancy plot](gapminder.png)|
+|report file|[report.md](report.md)|
 
 Thanks for reading!
